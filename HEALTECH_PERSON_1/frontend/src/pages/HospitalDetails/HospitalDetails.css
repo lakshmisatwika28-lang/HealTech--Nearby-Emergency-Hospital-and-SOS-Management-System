@@ -1,0 +1,5 @@
+.hospital-details-img { width: 100%; max-height: 240px; object-fit: cover; border-radius: var(--radius); margin-bottom: 12px; }
+.hospital-details-address { color: var(--color-muted); margin: 6px 0 14px; }
+.hospital-details-actions { display: flex; gap: 10px; margin-bottom: 14px; }
+.hospital-details-actions a, .hospital-details-actions button { text-decoration: none; text-align: center; }
+.hospital-details-meta { display: flex; gap: 16px; font-size: 14px; margin-bottom: 14px; color: var(--color-muted); }

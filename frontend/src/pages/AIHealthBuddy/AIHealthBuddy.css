@@ -1,0 +1,138 @@
+.buddy-card{
+  max-width:900px;
+  overflow:hidden
+}
+
+.buddy-messages{
+  min-height:430px;
+  max-height:550px;
+  overflow:auto;
+  padding:22px;
+  display:grid;
+  align-content:start;
+  gap:13px
+}
+
+.buddy-message{
+  display:flex;
+  gap:10px;
+  align-items:flex-start;
+  max-width:80%
+}
+
+.buddy-message.user{
+  margin-left:auto;
+  flex-direction:row-reverse
+}
+
+.buddy-message>span{
+  width:34px;
+  height:34px;
+  min-width:34px;
+  border-radius:10px;
+  display:grid;
+  place-items:center;
+  background:var(--primary-soft);
+  color:var(--primary);
+  font-size:11px;
+  font-weight:800
+}
+
+.buddy-message-content{
+  margin:0;
+  padding:11px 13px;
+  border-radius:12px;
+  background:var(--surface-soft);
+  color:var(--text);
+  font-size:13px;
+  line-height:1.6;
+  max-width:100%;
+  overflow-wrap:anywhere
+}
+
+.buddy-message.user .buddy-message-content{
+  background:var(--primary);
+  color:#fff
+}
+
+.buddy-message-content p{
+  margin:0 0 10px
+}
+
+.buddy-message-content p:last-child{
+  margin-bottom:0
+}
+
+.buddy-message-content strong{
+  font-weight:800
+}
+
+.buddy-message-content ul,
+.buddy-message-content ol{
+  margin:8px 0 10px;
+  padding-left:22px
+}
+
+.buddy-message-content li{
+  margin-bottom:6px;
+  line-height:1.55
+}
+
+.buddy-message-content h1,
+.buddy-message-content h2,
+.buddy-message-content h3{
+  margin:4px 0 10px;
+  line-height:1.4
+}
+
+.buddy-message-content h1{
+  font-size:17px
+}
+
+.buddy-message-content h2{
+  font-size:15px
+}
+
+.buddy-message-content h3{
+  font-size:14px
+}
+
+.buddy-message-content blockquote{
+  margin:8px 0;
+  padding-left:12px;
+  border-left:3px solid var(--primary);
+}
+
+.buddy-message-content code{
+  padding:2px 4px;
+  border-radius:4px;
+  background:rgba(127,127,127,.12);
+  font-size:12px
+}
+
+.buddy-input{
+  display:flex;
+  gap:10px;
+  padding:15px;
+  border-top:1px solid var(--border)
+}
+
+.buddy-input textarea{
+  flex:1;
+  resize:none;
+  border:1px solid var(--border);
+  border-radius:10px;
+  background:var(--surface-soft);
+  color:var(--text);
+  padding:11px;
+  outline:none
+}
+
+.buddy-input button{
+  border:0;
+  border-radius:9px;
+  background:var(--primary);
+  color:#fff;
+  padding:0 18px;
+  font-weight:800
+}

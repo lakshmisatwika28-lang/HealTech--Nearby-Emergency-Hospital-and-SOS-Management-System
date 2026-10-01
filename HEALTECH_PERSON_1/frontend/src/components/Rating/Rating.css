@@ -1,0 +1,2 @@
+.rating { font-size: 13px; font-weight: 600; color: #b8860b; }
+.rating-empty { color: var(--color-muted); font-weight: 400; }

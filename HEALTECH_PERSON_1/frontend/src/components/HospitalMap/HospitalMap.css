@@ -1,0 +1,2 @@
+.hospital-map img { width: 100%; border-radius: var(--radius); margin-bottom: 8px; }
+.hospital-map-link { color: var(--color-normal); font-weight: 600; font-size: 14px; }

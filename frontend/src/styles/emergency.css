@@ -1,0 +1,330 @@
+/* src/styles/emergency.css */
+
+
+/* --------------------------------
+   EMERGENCY PAGE
+-------------------------------- */
+
+.emergency-page {
+
+  background:
+    var(--background);
+
+  color:
+    var(--text);
+
+  min-height:
+    100vh;
+}
+
+
+/* --------------------------------
+   EMERGENCY HEADER
+-------------------------------- */
+
+.emergency-header {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+
+/* --------------------------------
+   EMERGENCY BADGE
+-------------------------------- */
+
+.emergency-badge {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  padding:
+    6px 10px;
+
+  border-radius:
+    20px;
+
+  background:
+    var(--emergency-soft);
+
+  color:
+    var(--emergency);
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  letter-spacing:
+    0.8px;
+}
+
+
+/* --------------------------------
+   SOS AREA
+-------------------------------- */
+
+.emergency-sos-area {
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 12px;
+}
+
+
+/* --------------------------------
+   SOS BUTTON
+-------------------------------- */
+
+.emergency-sos-button {
+
+  width: 130px;
+
+  height: 130px;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background:
+    var(--emergency);
+
+  color: white;
+
+  font-size: 25px;
+
+  font-weight: 900;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 0 0 10px
+      var(--emergency-soft),
+    0 12px 30px
+      rgba(220, 38, 38, 0.25);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.emergency-sos-button:hover {
+
+  transform:
+    scale(1.04);
+
+  box-shadow:
+    0 0 0 14px
+      var(--emergency-soft),
+    0 15px 35px
+      rgba(220, 38, 38, 0.35);
+}
+
+
+.emergency-sos-button:active {
+
+  transform:
+    scale(0.97);
+}
+
+
+/* --------------------------------
+   STATUS
+-------------------------------- */
+
+.emergency-status {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding:
+    14px 17px;
+
+  border:
+    1px solid
+    rgba(220, 38, 38, 0.2);
+
+  border-radius:
+    var(--radius-medium);
+
+  background:
+    var(--emergency-soft);
+}
+
+
+.emergency-status-dot {
+
+  width: 9px;
+
+  height: 9px;
+
+  border-radius: 50%;
+
+  background:
+    var(--emergency);
+}
+
+
+/* --------------------------------
+   EMERGENCY CARD
+-------------------------------- */
+
+.emergency-card {
+
+  padding: 20px;
+
+  border:
+    1px solid
+    rgba(220, 38, 38, 0.18);
+
+  border-radius:
+    var(--radius-medium);
+
+  background:
+    var(--surface);
+}
+
+
+/* --------------------------------
+   SELECTED HOSPITAL
+-------------------------------- */
+
+.emergency-hospital-selected {
+
+  border:
+    2px solid
+    var(--emergency);
+
+  background:
+    var(--emergency-soft);
+}
+
+
+/* --------------------------------
+   EMERGENCY ACTION
+-------------------------------- */
+
+.emergency-action-button {
+
+  padding:
+    11px 18px;
+
+  border: none;
+
+  border-radius:
+    var(--radius-small);
+
+  background:
+    var(--emergency);
+
+  color: white;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    var(--transition);
+}
+
+
+.emergency-action-button:hover {
+
+  background:
+    var(--emergency-dark);
+
+  transform:
+    translateY(-1px);
+}
+
+
+/* --------------------------------
+   AMBULANCE
+-------------------------------- */
+
+.emergency-ambulance {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding: 20px;
+
+  border:
+    1px solid var(--border);
+
+  border-radius:
+    var(--radius-medium);
+
+  background:
+    var(--surface);
+}
+
+
+/* --------------------------------
+   MAP CONTAINER
+-------------------------------- */
+
+.emergency-map-container {
+
+  width: 100%;
+
+  min-height: 350px;
+
+  overflow: hidden;
+
+  border-radius:
+    var(--radius-medium);
+
+  border:
+    1px solid var(--border);
+
+  background:
+    var(--surface-soft);
+}
+
+
+/* --------------------------------
+   DARK EMERGENCY MODE
+-------------------------------- */
+
+[data-theme="dark"]
+.emergency-card {
+
+  background:
+    #151515;
+
+  border-color:
+    rgba(239, 68, 68, 0.25);
+}
+
+
+[data-theme="dark"]
+.emergency-status {
+
+  background:
+    #2a0b0b;
+}

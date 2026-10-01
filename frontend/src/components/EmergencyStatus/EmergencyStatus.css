@@ -1,0 +1,215 @@
+.emergency-status {
+
+  padding: 20px;
+
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+
+  border-radius: 16px;
+
+}
+
+.status-header {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding-bottom: 17px;
+
+  border-bottom: 1px solid var(--border);
+
+}
+
+.status-indicator {
+
+  width: 38px;
+
+  height: 38px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #fee2e2;
+
+}
+
+.status-indicator span {
+
+  width: 12px;
+
+  height: 12px;
+
+  border-radius: 50%;
+
+  background: #ef4444;
+
+  animation: statusPulse 1.5s infinite;
+
+}
+
+.status-label {
+
+  color: #dc2626;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+
+}
+
+.status-header h3 {
+
+  margin: 3px 0 0;
+
+  color: var(--text);
+
+}
+
+.status-details {
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 15px;
+
+  padding-top: 17px;
+
+}
+
+.status-detail {
+
+  display: flex;
+
+  gap: 10px;
+
+}
+
+.status-detail > span {
+
+  font-size: 22px;
+
+}
+
+.status-detail strong {
+
+  color: var(--text);
+
+  font-size: 13px;
+
+}
+
+.status-detail p {
+
+  margin: 3px 0 0;
+
+  color: var(--muted);
+
+  font-size: 12px;
+
+}
+
+@keyframes statusPulse {
+
+  0% {
+
+    opacity: 1;
+
+  }
+
+  50% {
+
+    opacity: 0.35;
+
+  }
+
+  100% {
+
+    opacity: 1;
+
+  }
+
+}
+
+/* --------------------------------
+   LIGHT THEME TEXT
+-------------------------------- */
+
+/* --------------------------------
+   LIGHT THEME TEXT
+-------------------------------- */
+
+[data-theme="light"] .emergency-status-title {
+  color: #2563eb !important;
+}
+
+[data-theme="light"] .status-item-label {
+  color: #2563eb !important;
+}
+
+[data-theme="light"] .status-item strong {
+  color: #2563eb !important;
+}
+
+[data-theme="light"] .emergency-request-info span {
+  color: #2563eb !important;
+}
+
+[data-theme="light"] .emergency-request-info strong {
+  color: #2563eb !important;
+}
+
+/* --------------------------------
+   ACTIVE STATUS
+-------------------------------- */
+
+.status-indicator {
+  width: 38px;
+  height: 38px;
+  min-width: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  font-size: 10px;
+  font-weight: 700;
+  color: #15803d;
+
+  white-space: nowrap;
+}
+
+.status-indicator .status-dot {
+  display: none;
+}
+
+/* --------------------------------
+   LIGHT THEME
+-------------------------------- */
+
+[data-theme="light"] .status-indicator {
+  background: #fee2e2;
+  color: #15803d;
+}
+
+/* --------------------------------
+   DARK THEME
+-------------------------------- */
+
+[data-theme="dark"] .status-indicator {
+  background: #163b2a;
+  color: #22c55e;
+}

@@ -1,0 +1,1 @@
+import React from"react";import"./LoadingAnimation.css";export default function LoadingAnimation({label="Loading..."}){return <div className="loading-animation"><div className="loading-spinner"/><span>{label}</span></div>}

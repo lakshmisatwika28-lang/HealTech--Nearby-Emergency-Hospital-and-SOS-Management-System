@@ -1,0 +1,1 @@
+.nearby-layout{display:grid;grid-template-columns:1fr 1.1fr;gap:18px}.nearby-page .results-list{display:grid;gap:12px;max-height:600px;overflow:auto}@media(max-width:900px){.nearby-layout{grid-template-columns:1fr}.nearby-page .map-shell{order:-1}.nearby-page .results-list{max-height:none}}

@@ -1,0 +1,2 @@
+import React,{useEffect} from "react";import{useNavigate}from"react-router-dom";import"./Splash.css";
+export default function Splash(){const navigate=useNavigate();useEffect(()=>{const t=setTimeout(()=>navigate(localStorage.getItem("healtechUser")?"/dashboard":"/login",{replace:true}),1800);return()=>clearTimeout(t)},[navigate]);return <div className="splash"><div className="splash-mark">✚</div><h1>HEALTECH</h1><p>Healthcare, simplified.</p><div className="splash-loader"><span/></div></div>}

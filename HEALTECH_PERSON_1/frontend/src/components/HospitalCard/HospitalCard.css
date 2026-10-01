@@ -1,0 +1,12 @@
+.hospital-card {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+.hospital-card:hover { transform: translateY(-2px); }
+.hospital-card-img { width: 84px; height: 84px; object-fit: cover; border-radius: 8px; background: #eee; }
+.hospital-card-body h3 { font-size: 16px; margin-bottom: 4px; }
+.hospital-card-address { color: var(--color-muted); font-size: 13px; margin-bottom: 6px; }
+.hospital-card-meta { display: flex; gap: 12px; font-size: 13px; align-items: center; }

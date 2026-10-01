@@ -1,0 +1,30 @@
+.btn-primary {
+  background: var(--color-normal);
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 15px;
+}
+
+.btn-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.card {
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 16px;
+}
+
+body.dark .card {
+  background: #1c1c1c;
+}
+
+.input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: var(--radius);
+  border: 1px solid #d7dbe0;
+  font-size: 15px;
+}

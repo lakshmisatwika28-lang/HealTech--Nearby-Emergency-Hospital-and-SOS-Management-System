@@ -1,0 +1,228 @@
+/* src/styles/dashboard.css */
+
+
+/* --------------------------------
+   DASHBOARD COMMON
+-------------------------------- */
+
+.dashboard-page,
+.dashboard-main {
+
+  box-sizing: border-box;
+}
+
+
+/* --------------------------------
+   MODE CARDS
+-------------------------------- */
+
+.mode-card {
+
+  border-radius:
+    var(--radius-large);
+
+  border:
+    1px solid var(--border);
+
+  background:
+    var(--surface);
+
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition),
+    border-color var(--transition);
+}
+
+
+.mode-card:hover {
+
+  transform:
+    translateY(-3px);
+
+  box-shadow:
+    var(--shadow);
+}
+
+
+/* --------------------------------
+   NORMAL MODE
+-------------------------------- */
+
+.normal-mode {
+
+  border-color:
+    rgba(22, 163, 74, 0.25);
+
+  background:
+    var(--normal-soft);
+}
+
+
+.normal-mode .mode-title {
+
+  color:
+    var(--normal);
+}
+
+
+.normal-mode .mode-button {
+
+  background:
+    var(--normal);
+
+  color:
+    white;
+}
+
+
+.normal-mode .mode-button:hover {
+
+  background:
+    var(--normal-dark);
+}
+
+
+/* --------------------------------
+   EMERGENCY MODE
+-------------------------------- */
+
+.emergency-mode {
+
+  border-color:
+    rgba(220, 38, 38, 0.25);
+
+  background:
+    var(--emergency-soft);
+}
+
+
+.emergency-mode .mode-title {
+
+  color:
+    var(--emergency);
+}
+
+
+.emergency-mode .mode-button {
+
+  background:
+    var(--emergency);
+
+  color:
+    white;
+}
+
+
+.emergency-mode .mode-button:hover {
+
+  background:
+    var(--emergency-dark);
+}
+
+
+/* --------------------------------
+   DASHBOARD BUTTONS
+-------------------------------- */
+
+.dashboard-button {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  padding:
+    11px 17px;
+
+  border: none;
+
+  border-radius:
+    var(--radius-small);
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    var(--transition);
+}
+
+
+.dashboard-button:hover {
+
+  transform:
+    translateY(-1px);
+}
+
+
+.dashboard-button:active {
+
+  transform:
+    translateY(0);
+}
+
+
+/* --------------------------------
+   DASHBOARD CARD
+-------------------------------- */
+
+.dashboard-card {
+
+  padding: 22px;
+
+  background:
+    var(--surface);
+
+  border:
+    1px solid var(--border);
+
+  border-radius:
+    var(--radius-medium);
+
+  box-shadow:
+    var(--shadow-small);
+}
+
+
+/* --------------------------------
+   QUICK ACTIONS
+-------------------------------- */
+
+.quick-action {
+
+  cursor: pointer;
+
+  transition:
+    var(--transition);
+}
+
+
+.quick-action:hover {
+
+  border-color:
+    var(--primary);
+
+  transform:
+    translateY(-2px);
+
+  box-shadow:
+    var(--shadow);
+}
+
+
+/* --------------------------------
+   DARK MODE
+-------------------------------- */
+
+[data-theme="dark"]
+.dashboard-card {
+
+  box-shadow:
+    0 10px 30px
+    rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,4 @@
+.ambulance-hospital { color: var(--color-muted); margin-bottom: 12px; }
+.ambulance-form { display: flex; flex-direction: column; gap: 10px; max-width: 320px; }
+.ambulance-error { color: var(--color-emergency); font-size: 13px; }
+.ambulance-confirmed { text-align: center; padding-top: 60px; }

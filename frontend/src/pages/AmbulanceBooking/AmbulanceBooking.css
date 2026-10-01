@@ -1,0 +1,371 @@
+.ambulance-booking-page {
+  min-height: 100vh;
+  background: var(--background);
+  color: var(--text);
+}
+
+.ambulance-booking-main {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+  padding: 35px 0 60px;
+}
+
+.ambulance-back-button {
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin-bottom: 25px;
+  color: var(--primary);
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.ambulance-booking-header {
+  margin-bottom: 28px;
+}
+
+.ambulance-booking-label {
+  display: block;
+  color: #dc2626;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.ambulance-booking-header h1 {
+  margin: 7px 0;
+  font-size: 38px;
+}
+
+.ambulance-booking-header p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.ambulance-booking-error {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #fca5a5;
+  border-radius: 10px;
+  background: #fef2f2;
+  color: #991b1b;
+  font-size: 13px;
+}
+
+.ambulance-booking-error p {
+  flex: 1;
+  margin: 0;
+}
+
+.ambulance-booking-error button {
+  border: none;
+  background: transparent;
+  color: #991b1b;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.ambulance-booking-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.ambulance-booking-form-card,
+.ambulance-route-card {
+  padding: 25px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: var(--surface);
+}
+
+.booking-card-title {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 25px;
+}
+
+.booking-card-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: #fee2e2;
+  font-size: 24px;
+}
+
+.booking-card-title h2 {
+  margin: 0 0 4px;
+  font-size: 20px;
+}
+
+.booking-card-title p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.booking-form-group {
+  margin-bottom: 18px;
+}
+
+.booking-form-group label {
+  display: block;
+  margin-bottom: 7px;
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.booking-form-group input,
+.booking-form-group select {
+  width: 100%;
+  padding: 12px 13px;
+  box-sizing: border-box;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  background: var(--background);
+  color: var(--text);
+  font: inherit;
+  outline: none;
+}
+
+.booking-form-group input:focus,
+.booking-form-group select:focus {
+  border-color: var(--primary);
+}
+
+.booking-date-time-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.request-ambulance-button {
+  width: 100%;
+  padding: 13px 17px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 9px;
+  background: #dc2626;
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.request-ambulance-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.route-card-header {
+  margin-bottom: 25px;
+}
+
+.route-card-header h2 {
+  margin: 0 0 4px;
+  font-size: 20px;
+}
+
+.route-card-header p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.route-point {
+  display: flex;
+  gap: 14px;
+}
+
+.route-dot {
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 11px;
+  font-size: 19px;
+}
+
+.pickup-dot {
+  background: #dbeafe;
+}
+
+.hospital-dot {
+  background: #fee2e2;
+}
+
+.route-point span {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--muted);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.route-point h3 {
+  margin: 0 0 5px;
+  font-size: 15px;
+}
+
+.route-point p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.route-line {
+  width: 2px;
+  height: 45px;
+  margin: 5px 0 5px 20px;
+  background: var(--border);
+}
+
+.ambulance-booking-error-card,
+.booking-success-card {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 35px;
+  text-align: center;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: var(--surface);
+}
+
+.ambulance-error-icon,
+.booking-success-icon {
+  width: 65px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  background: #fee2e2;
+  font-size: 30px;
+}
+
+.ambulance-booking-error-card h2 {
+  margin: 0 0 8px;
+}
+
+.ambulance-booking-error-card p {
+  margin: 0 0 20px;
+  color: var(--muted);
+}
+
+.ambulance-booking-error-card button {
+  padding: 11px 17px;
+  border: none;
+  border-radius: 9px;
+  background: var(--primary);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.booking-success-icon {
+  background: #dcfce7;
+  color: #15803d;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.booking-label {
+  display: block;
+  margin-bottom: 8px;
+  color: #16a34a;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.booking-success-card h1 {
+  margin: 0 0 8px;
+  font-size: 30px;
+}
+
+.booking-success-card > p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.booking-summary {
+  margin-top: 25px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.booking-summary-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 13px 15px;
+  border-bottom: 1px solid var(--border);
+  font-size: 13px;
+}
+
+.booking-summary-row:last-child {
+  border-bottom: none;
+}
+
+.booking-summary-row span {
+  color: var(--muted);
+}
+
+.booking-summary-row strong {
+  text-align: right;
+}
+
+.booking-status {
+  color: #16a34a;
+}
+
+.booking-success-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.booking-back-button {
+  padding: 11px 16px;
+  border: 1px solid var(--primary);
+  border-radius: 9px;
+  background: transparent;
+  color: var(--primary);
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media (max-width: 750px) {
+  .ambulance-booking-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .ambulance-booking-header h1 {
+    font-size: 30px;
+  }
+
+  .booking-date-time-row {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,2 @@
+.hospital-list { display: flex; flex-direction: column; }
+.hospital-list-empty { color: var(--color-muted); text-align: center; padding: 24px; }

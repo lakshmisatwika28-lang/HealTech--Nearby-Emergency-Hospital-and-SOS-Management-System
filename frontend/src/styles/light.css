@@ -1,0 +1,157 @@
+/* src/styles/light.css */
+
+/* --------------------------------
+   GLOBAL RESET
+-------------------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  background: var(--background);
+
+  color: var(--text);
+
+  min-width: 320px;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+:root,
+[data-theme="light"] {
+
+  /* --------------------------------
+     MAIN COLORS
+  -------------------------------- */
+
+  --background: #f8fafc;
+
+  --surface: #ffffff;
+
+  --surface-soft: #f1f5f9;
+
+  --primary: #2563eb;
+
+  --primary-dark: #1d4ed8;
+
+  --primary-soft: #eff6ff;
+
+
+  /* --------------------------------
+     NORMAL MODE
+  -------------------------------- */
+
+  --normal: #16a34a;
+
+  --normal-dark: #15803d;
+
+  --normal-soft: #f0fdf4;
+
+
+  /* --------------------------------
+     EMERGENCY MODE
+  -------------------------------- */
+
+  --emergency: #dc2626;
+
+  --emergency-dark: #b91c1c;
+
+  --emergency-soft: #fef2f2;
+
+
+  /* --------------------------------
+     TEXT
+  -------------------------------- */
+
+  --text: #0f172a;
+
+  --text-secondary: #334155;
+
+  --muted: #64748b;
+
+  --muted-light: #94a3b8;
+
+
+  /* --------------------------------
+     BORDER
+  -------------------------------- */
+
+  --border: #e2e8f0;
+
+  --border-light: #f1f5f9;
+
+
+  /* --------------------------------
+     STATUS
+  -------------------------------- */
+
+  --success: #16a34a;
+
+  --warning: #f59e0b;
+
+  --danger: #dc2626;
+
+
+  /* --------------------------------
+     SHADOW
+  -------------------------------- */
+
+  --shadow:
+    0 10px 30px
+    rgba(15, 23, 42, 0.08);
+
+  --shadow-small:
+    0 4px 12px
+    rgba(15, 23, 42, 0.06);
+
+
+  /* --------------------------------
+     OTHER
+  -------------------------------- */
+
+  --radius-small: 8px;
+
+  --radius-medium: 12px;
+
+  --radius-large: 20px;
+
+  --transition: 0.2s ease;
+}

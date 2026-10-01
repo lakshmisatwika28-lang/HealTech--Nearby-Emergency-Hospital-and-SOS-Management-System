@@ -1,0 +1,336 @@
+.dashboard-page {
+  min-height: 100vh;
+
+  background: var(--background);
+
+  color: var(--text);
+}
+
+.dashboard-main {
+  width: min(1200px, 92%);
+
+  margin: 0 auto;
+
+  padding: 45px 0 60px;
+}
+
+
+/* -----------------------------
+   WELCOME
+----------------------------- */
+
+.dashboard-welcome {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 45px;
+}
+
+.dashboard-eyebrow {
+  color: var(--primary);
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  letter-spacing: 1.5px;
+}
+
+.dashboard-welcome h1 {
+  margin: 10px 0 15px;
+
+  font-size: clamp(36px, 5vw, 58px);
+
+  line-height: 1.05;
+
+  color: var(--text);
+
+  letter-spacing: -1.5px;
+}
+
+.dashboard-welcome h1 span {
+  color: var(--primary);
+}
+
+.dashboard-welcome p {
+  max-width: 650px;
+
+  margin: 0;
+
+  color: var(--muted);
+
+  font-size: 16px;
+
+  line-height: 1.7;
+}
+
+
+/* -----------------------------
+   SECTIONS
+----------------------------- */
+
+.dashboard-section {
+  margin-bottom: 45px;
+}
+
+.section-heading {
+  margin-bottom: 18px;
+}
+
+.section-heading h2 {
+  margin: 0 0 5px;
+
+  color: var(--text);
+
+  font-size: 24px;
+}
+
+.section-heading p {
+  margin: 0;
+
+  color: var(--muted);
+
+  font-size: 14px;
+}
+
+
+/* -----------------------------
+   EMERGENCY SECTION
+----------------------------- */
+
+.dashboard-emergency-section {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 40px;
+
+  padding: 35px;
+
+  margin-bottom: 45px;
+
+  border-radius: 22px;
+
+  background: var(--emergency-soft);
+
+  border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.emergency-info {
+  flex: 1;
+}
+
+.emergency-eyebrow {
+  color: #dc2626;
+}
+
+.emergency-info h2 {
+  margin: 8px 0 10px;
+
+  color: var(--text);
+
+  font-size: 30px;
+}
+
+.emergency-info p {
+  max-width: 600px;
+
+  margin: 0 0 20px;
+
+  color: var(--muted);
+
+  line-height: 1.6;
+}
+
+.dashboard-emergency-button {
+  padding: 12px 18px;
+
+  border: none;
+
+  border-radius: 9px;
+
+  background: #dc2626;
+
+  color: white;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.dashboard-emergency-button:hover {
+  background: #b91c1c;
+
+  transform: translateY(-2px);
+}
+
+.dashboard-sos-wrapper {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 25px;
+}
+
+
+/* -----------------------------
+   QUICK ACCESS
+----------------------------- */
+
+.quick-access-section {
+  margin-bottom: 20px;
+}
+
+.quick-access-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 16px;
+}
+
+.quick-access-card {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  padding: 20px;
+
+  min-height: 120px;
+
+  text-align: left;
+
+  border: 1px solid var(--border);
+
+  border-radius: 15px;
+
+  background: var(--surface);
+
+  color: var(--text);
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.quick-access-card:hover {
+  border-color: var(--primary);
+
+  transform: translateY(-3px);
+
+  box-shadow: var(--shadow);
+}
+
+.quick-icon {
+  width: 48px;
+  height: 48px;
+
+  min-width: 48px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background: var(--primary-soft);
+
+  font-size: 23px;
+}
+
+.quick-access-card h3 {
+  margin: 0 0 5px;
+
+  font-size: 15px;
+}
+
+.quick-access-card p {
+  margin: 0;
+
+  color: var(--muted);
+
+  font-size: 12px;
+
+  line-height: 1.5;
+}
+
+.quick-arrow {
+  margin-left: auto;
+
+  color: var(--muted);
+
+  font-size: 20px;
+}
+
+
+/* -----------------------------
+   RESPONSIVE
+----------------------------- */
+
+@media (max-width: 900px) {
+  .quick-access-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-emergency-section {
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+  .dashboard-sos-wrapper {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .dashboard-main {
+    width: 90%;
+
+    padding-top: 30px;
+  }
+
+  .dashboard-welcome h1 {
+    font-size: 38px;
+  }
+
+  .dashboard-emergency-section {
+    padding: 25px 18px;
+  }
+}
+
+/* --------------------------------
+   DARK THEME - DASHBOARD MODE CARDS
+-------------------------------- */
+
+[data-theme="dark"] .mode-card h3,
+[data-theme="dark"] .mode-card p {
+  color: #ffffff !important;
+}
+
+/* --------------------------------
+   MODE CARD ARROW POSITION
+-------------------------------- */
+
+.mode-card {
+  position: relative;
+}
+
+.mode-card .arrow {
+  position: absolute;
+  right: 32px;
+  top: 50%;
+  transform: translateY(-50%);
+}

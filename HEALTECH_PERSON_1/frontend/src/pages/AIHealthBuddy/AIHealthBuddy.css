@@ -1,0 +1,6 @@
+.ai-buddy-thread { display: flex; flex-direction: column; gap: 10px; margin: 16px 0; min-height: 200px; }
+.ai-buddy-msg { padding: 10px 14px; border-radius: var(--radius); max-width: 80%; }
+.ai-buddy-user { align-self: flex-end; background: var(--color-normal); color: #fff; }
+.ai-buddy-assistant { align-self: flex-start; background: #eef1f4; }
+.ai-buddy-input { display: flex; gap: 8px; }
+.ai-buddy-input .input { flex: 1; }
