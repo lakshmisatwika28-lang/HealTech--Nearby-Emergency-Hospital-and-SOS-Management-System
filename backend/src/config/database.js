@@ -12,6 +12,13 @@ const connectDatabase = async () => {
       password: env.dbPassword,
       database: env.dbName,
 
+      ssl:
+        process.env.NODE_ENV === "production"
+          ? {
+              rejectUnauthorized: false
+            }
+          : undefined,
+
       waitForConnections: true,
       connectionLimit: 10,
       queueLimit: 0
