@@ -1,84 +1,33 @@
-const API_BASE_URL =
-  "http://localhost:5000/api";
+import api from "./api";
 
 const emergencyTripService = {
   async createTrip(tripData) {
     const response =
-      await fetch(
-        `${API_BASE_URL}/emergency-trips`,
-        {
-          method: "POST",
-
-          headers: {
-            "Content-Type":
-              "application/json"
-          },
-
-          body:
-            JSON.stringify(tripData)
-        }
+      await api.post(
+        "/emergency-trips",
+        tripData
       );
 
-    const data =
-      await response.json();
-
-    if (!response.ok) {
-      throw new Error(
-        data?.message ||
-        "Failed to create emergency trip"
-      );
-    }
-
-    return data;
+    return response.data;
   },
 
   async getTripById(id) {
     const response =
-      await fetch(
-        `${API_BASE_URL}/emergency-trips/${id}`
+      await api.get(
+        `/emergency-trips/${id}`
       );
 
-    const data =
-      await response.json();
-
-    if (!response.ok) {
-      throw new Error(
-        data?.message ||
-        "Failed to fetch emergency trip"
-      );
-    }
-
-    return data;
+    return response.data;
   },
 
   async updateTrip(id, updates) {
     const response =
-      await fetch(
-        `${API_BASE_URL}/emergency-trips/${id}`,
-        {
-          method: "PATCH",
-
-          headers: {
-            "Content-Type":
-              "application/json"
-          },
-
-          body:
-            JSON.stringify(updates)
-        }
+      await api.patch(
+        `/emergency-trips/${id}`,
+        updates
       );
 
-    const data =
-      await response.json();
-
-    if (!response.ok) {
-      throw new Error(
-        data?.message ||
-        "Failed to update emergency trip"
-      );
-    }
-
-    return data;
+    return response.data;
   }
 };
 

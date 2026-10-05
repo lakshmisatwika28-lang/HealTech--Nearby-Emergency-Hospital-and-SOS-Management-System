@@ -1,7 +1,4 @@
-import axios from "axios";
-
-const API_BASE_URL =
-  "http://localhost:5000/api";
+import api from "./api";
 
 const ambulanceService = {
 
@@ -9,8 +6,8 @@ const ambulanceService = {
     bookingData
   ) {
     const response =
-      await axios.post(
-        `${API_BASE_URL}/ambulance`,
+      await api.post(
+        "/ambulance",
         bookingData
       );
 
@@ -19,8 +16,8 @@ const ambulanceService = {
 
   async getAllBookings() {
     const response =
-      await axios.get(
-        `${API_BASE_URL}/ambulance`
+      await api.get(
+        "/ambulance"
       );
 
     return response.data;
@@ -28,8 +25,8 @@ const ambulanceService = {
 
   async getBookingById(id) {
     const response =
-      await axios.get(
-        `${API_BASE_URL}/ambulance/${id}`
+      await api.get(
+        `/ambulance/${id}`
       );
 
     return response.data;
@@ -40,8 +37,8 @@ const ambulanceService = {
     status
   ) {
     const response =
-      await axios.patch(
-        `${API_BASE_URL}/ambulance/${id}/status`,
+      await api.patch(
+        `/ambulance/${id}/status`,
         { status }
       );
 
@@ -50,8 +47,8 @@ const ambulanceService = {
 
   async cancelBooking(id) {
     const response =
-      await axios.patch(
-        `${API_BASE_URL}/ambulance/${id}/cancel`
+      await api.patch(
+        `/ambulance/${id}/cancel`
       );
 
     return response.data;
